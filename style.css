@@ -1,0 +1,46 @@
+/* Estilize os quadrados */
+.vermelha {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+.amarela {
+    background-color: yellow;
+}
+/* Defina o tamanho e altura dos quadrados */
+div {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+/*Estilize os quadrados */
+.vermelha,
+.azul,
+.verde,
+.amarela {
+    margin: -2px; /*Remova a margem vertical */
+    border: 1 px solid black;
+}
+
+/* Estilize o quadrado com a classe "hov" quando o mouse passar por cima */
+.hov:hover {
+    background-color: aqua;
+}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+}
+
