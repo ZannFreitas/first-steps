@@ -3,52 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model Rosana</title>
-    <link rel="shortcut icon" href="Florbela.ico">
+    <title>Heart beating</title>
+    <link rel="shortcut icon" href="coração.ico"> <!-- Favicon deve estar dentro do head -->
+
     <style>
-        div {
-            height: 400px;
-            width: 400px;
 
-            border-width: 20px;
-            border-style:dotted;
-            border-color: rgb(226, 43, 165);
-            border-radius: 20px;
+        @keyframes heartbeat {
+            
+            0% { transform: scale(1);}
+            25% { transform: scale(1.1);}
+            50% { transform: scale(1);}
+            75% { transform: scale(1.1);}
+            100% { transform: scale(1);}
+        }
 
-            background-image: url(https://cdn.pixabay.com/photo/2020/10/29/14/25/flowers-5696378_1280.jpg);
-            text-align: center;
-            box-shadow: inset 20px 26px 23px;
-            background-size: cover;
+        .heart-img {
+            animation: heartbeat 1s infinite;
+        }
 
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
+        .frame {
+            border: 5px solid; /* cria o quadro */
+            border-color: pink;
+            outline: groove;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            width: fit-content;
+            display: flex;
+            background-color: lightcoral;
+            
 
+        }
+    
+        .frame img {
+            display: block;
+            width: 600px; /* Ajuste a largura conforme necessário */
+            height: auto;
+            background-color: lavenderblush;
+            
+        }
 
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
 
-            outline-width: 36px;
-            outline-style: inset;
-            outline-color: aquamarine;
+        .frame {
+            position:relative; 
+        }
 
-            margin: auto;
-            margin-top: 50px;
+        .text-centered1 {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: brown;
+            font-size: 55px;
+            font-style: oblique;
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+            z-index: 10;
 
         }
 
-        p {
-            padding-top: 50px;
-            font-style: italic;
-            font-size: 60px;
-            color: yellow;
-            font-weight: bold;
+        .text-centered2 {
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: brown;
+            font-size: 30px;
+            font-style: oblique;
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+            z-index: 10;
+        }
+
+        .text-bottom-right {
+            position: absolute;
+            bottom: 15%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            color: brown;
+            font-size: 20px;
+            font-style: oblique;
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+            z-index: 10;
+        }
+
+        .text-bottom-left {
+            position: absolute;
+            bottom: 15%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            color: brown;
+            font-size: 20px;
+            font-style: oblique;
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+            z-index: 10;
         }
 
     </style>
+</head>
+
 <body>
-    <div>
-        <p>Descodificadas</p>
+    <div class="container">
+        <div class="frame">
+            <img src="gradient_heart.jpg" alt="Coração pulsando" class="heart-img">
+
+            <div class="text-centered1">Descodificadas</div> 
+            <div class="text-centered2">Eu amo tecnologia!</div>
+            <div class="text-bottom-right">J'adore la tecnologie!</div>
+            <div class="text-bottom-left">Amo la tecnología!</div>
+            
+        </div>
     </div>
-    
+
 </body>
 </html>
