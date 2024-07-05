@@ -3,122 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heart beating</title>
-    <link rel="shortcut icon" href="coração.ico"> <!-- Favicon deve estar dentro do head -->
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="shortcut icon" href="Imagens/afm-clube-do-livro-logo.ico">
 
     <style>
+        /*Estilo de parágrafo */
+        .titulo {
+            color: rgb(128, 67, 128);
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 60px;
+            padding-top: 60px;
+            display: inline;
+            transform: perspective(500px) rotateX(10deg);
+            box-sizing: border-box;
+            margin-top: 20px;
 
-        @keyframes heartbeat {
-            
-            0% { transform: scale(1);}
-            25% { transform: scale(1.1);}
-            50% { transform: scale(1);}
-            75% { transform: scale(1.1);}
-            100% { transform: scale(1);}
         }
 
-        .heart-img {
-            animation: heartbeat 1s infinite;
-        }
-
-        .frame {
-            border: 5px solid; /* cria o quadro */
-            border-color: pink;
-            outline: groove;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 10px;
-            width: fit-content;
-            display: flex;
-            background-color: lightcoral;
-            
-
+        /* Estilos específicos para o rodapé na home page */
+        body.home footer {
+            position: relative; 
+            margin-top: 23px; 
         }
     
-        .frame img {
-            display: block;
-            width: 600px; /* Ajuste a largura conforme necessário */
-            height: auto;
-            background-color: lavenderblush;
-            
-        }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            
-        }
-
-        .frame {
-            position:relative; 
-        }
-
-        .text-centered1 {
-            position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: brown;
-            font-size: 55px;
-            font-style: oblique;
-            font-family: Georgia, 'Times New Roman', Times, serif ;
-            z-index: 10;
-
-        }
-
-        .text-centered2 {
-            position: absolute;
-            bottom: 0%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: brown;
-            font-size: 30px;
-            font-style: oblique;
-            font-family: Georgia, 'Times New Roman', Times, serif ;
-            z-index: 10;
-        }
-
-        .text-bottom-right {
-            position: absolute;
-            bottom: 15%;
-            right: 50%;
-            transform: translate(-50%, -50%);
-            color: brown;
-            font-size: 20px;
-            font-style: oblique;
-            font-family: Georgia, 'Times New Roman', Times, serif ;
-            z-index: 10;
-        }
-
-        .text-bottom-left {
-            position: absolute;
-            bottom: 15%;
-            left: 70%;
-            transform: translate(-50%, -50%);
-            color: brown;
-            font-size: 20px;
-            font-style: oblique;
-            font-family: Georgia, 'Times New Roman', Times, serif ;
-            z-index: 10;
-        }
-
+    
     </style>
+
 </head>
+<body class="home">
 
-<body>
-    <div class="container">
-        <div class="frame">
-            <img src="gradient_heart.jpg" alt="Coração pulsando" class="heart-img">
+    <header class="header-inicial">
+        <!-- Conteúdo do cabeçalho - logo, menu, etc. -->
 
-            <div class="text-centered1">Descodificadas</div> 
-            <div class="text-centered2">Eu amo tecnologia!</div>
-            <div class="text-bottom-right">J'adore la tecnologie!</div>
-            <div class="text-bottom-left">Amo la tecnología!</div>
-            
+        <div class="logo">
+            <img src="Imagens/AFM - clube-do-livro-logo.png" alt="Logo do clube">
         </div>
+    
+        <nav class="menu">
+        
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="eventos.html">Eventos</a></li>
+              <li><a href="livros.html">Livros</a></li>
+              <li><a href="objetivo.html">Objetivo</a></li>
+              <li><a href="trailers.html">Trailers</a></li>
+              <li><a href="resultado.html">Resultado</a></li>
+              <li><a href="local.html">Local</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+    
+      
+<style>
+
+    /* Imagem de fundo */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+
+        background-image: url(Imagens/imagem-livros.png);
+        background-size: cover; /* imagem cobre todo espaço disponível */
+        background-repeat: no-repeat; /* evita repetição da imagem */
+        background-position: center; /* centraliza a imagem */
+
+    }
+</style>
+
+    </header>
+
+    <div class="titulo">
+        <p>AFM - Clube do Livro</p>
+    </div>
+    
+
+<div class="flex-container"> <!--citação--> 
+    <p> Leitura - viagem a qualquer lugar, <br>
+    a qualquer hora, mas com destinos certos: <br>
+conhecimento, emoção e muita diversão! <br>
+Quanto à companhia?<br>
+Ah! Esse ingrediente não é mais secreto.<br>
+<br>
+AFM - Clube do Livro, com certeza! </p>
+</div>
+
+       
+<footer>
+    <!--conteúdo do rodapé-->
+
+    <div class="footer-content">
+        <p>AFM - Clube do Livro</p>
+        <p>&copy; 2024 AFM - Clube do Livro. Todos os direitos reservados</p>
+        <p>Desenvolvido por Rosana Freitas</p>
+
     </div>
 
+</footer>
+<body>
+    
 </body>
 </html>
