@@ -1,188 +1,79 @@
-/* Geral */
-body, html {
-  height: 100%;
+
+h1 {
+  font-size: 2em;
+  color: #8c0f9d;
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  width: 35px;
+  height: 55px;
+  text-align: center;
+  vertical-align: middle;
+}
+td.no-border {
+  border: none;
+}
+.laranja {
+  background-color: orange;
+  color: white;
+  border: 1px solid #ddd;
+}
+.rosa {
+  background-color: rgb(247, 164, 178);
+  color: white;
+  border: 1px solid #ddd;
+}
+.amarelo {
+  background-color: yellow;
+  color: white;
+  border: 1px solid #ddd;
+}
+.verde {
+  background-color: green;
+  color: white;
+  border: 1px solid #ddd;
+}
+.vermelho {
+  background-color: red;
+  color: white;
+  border: 1px solid #ddd;
+}
+.lilás {
+  background-color: rgb(236, 179, 236);
+  color: white;
+  border: 1px solid #ddd;
+}
+.azul {
+  background-color: rgb(123, 176, 237);
+  color: white;
+  border: 1px solid #ddd;
+}
+.cinza {
+  background-color: grey;
+  color: white;
+  border: 1px solid #ddd;
+}
+h3 {
+  font-size: 18px;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  color: white;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+h4 {
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: white;
 }
-
-.content {
-  flex: 1;
+h5 {
+  margin: 0;
+  font-size: 12px;
+  color: white;
+  text-align: left;
 }
-
-/* Navegação */
-
-.home nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  .home nav li {
-    display: inline; /* ou 'inline-block' para mais controle */
-    margin-right: 20px;
-
-  }
-
-  .home nav li:hover {
-    background-color: rgb(243, 172, 172);
-  }
-  
-  .home nav a {
-    text-decoration: none;
-    padding: 10px;
-    color: #642e2e;
-  }
-
-  .menu {
-    margin-left: 20px; /*alinha menu à direita */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-  }
-
-  .header-inicial { 
-    display: flex; /* cria um container flex */
-    align-items: center /*alinha verticalmente no centro */
-  }
-  .home .logo img {
-
-    float: left; /* alinha logotipo à esquerda */
-    width: 150px; /*define a largura */
-    height: auto; /* mantém a proporção original */
-  }
-
-  /* citação da home */
-  .home .flex-container p {
-    text-align: center;
-    margin-top: 100px;
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-
-  }
-
-  .home .p {
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-  }
-
-  /* footer */
-  footer {
-    background-color: #a58484;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-        
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /*espaço entre os itens */
-  }
-
-  .footer-content p {
-    margin: 0;
-  }
-
-  /* Estilo menu demais páginas */
-
-  body.sobre {
-    padding: 0px;
-    margin: 0;
-  }
-
- .banner {
-    padding: 0;
-    margin-top: 0;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
- }
-
- /* adiciona a imagem de fundo ao menu específico da página sobre */
- .sobre .banner .menu {
-    background-image: url("Imagens/imagem-livros.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- .banner .menu li {
-    display: inline-block;
-    margin: 0 10px;
- }
-
- .banner .menu li:hover {
-    background-color: rgb(243, 172, 172);
-    color: #fff;
- }
-
- .banner .menu a {
-    text-decoration: none;
-    color: #642e2e;
-    transition: color 0.5s ease;
-    
- }
-
- /* Estilo do logotipo no banner */
-
- .sobre .banner .logo {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    width: 100px;
-    height: 90px;
- }
-
-
-
-
-/* Estilo do conteúdo */
-.sobre .content {
-    padding: 20px;
-}
-
-
-.p {
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(45deg, #f3ec78, #af4261);
-    padding: 10px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/*Estilo para o botão da página oculta */
-.botao-oculto {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #6200ea;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-top: 20px;
-}
-
-.botao-oculto:hover{
-  background-color: #3700b3;
-}
-
-
